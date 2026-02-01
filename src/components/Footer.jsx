@@ -20,7 +20,7 @@ const Footer = () => {
     <>
       <div className="w-full mx-auto px-6 md:px-20 pt-16 md:pt-20 pb-8 md:pb-6 bg-green-600">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-6 justify-between pb-6">
-          <div className="space-y-4 border-r-2 border-white">
+          <div className="space-y-4 md:border-r-2 border-white">
             <div className="font-bold text-2xl text-white">🏔️ Green Nepal</div>
             <p className="italic text-white/90 leading-relaxed">
               Pioneering sustainable tourism in the Himalayas since 2010. We're
@@ -55,7 +55,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="space-y-4 border-r-2 border-white">
+          <div className="space-y-4 md:border-r-2 border-white">
             <div className="font-bold text-xl text-white">Quick Links</div>
             <div className="flex flex-col gap-3 text-white/90">
               {[
@@ -77,7 +77,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="space-y-4 border-r-2 border-white">
+          <div className="space-y-4 md:border-r-2 border-white">
             <div className="font-bold text-xl text-white">Popular Treks</div>
             <div className="flex flex-col gap-3 text-white/90">
               {[
@@ -128,21 +128,61 @@ const Footer = () => {
         <div className="flex flex-col items-center md:items-start text-center md:text-left gap-3">
           <p className="text-gray-700 font-medium">We accept</p>
           <div className="flex flex-wrap justify-center md:justify-start items-center gap-4">
-            <img src={qr} alt="qr payment" className="h-8 md:h-10 w-auto object-contain hover:scale-105 transition-transform" />
-            <img src={visa} alt="visa payment" className="h-8 md:h-10 w-auto object-contain hover:scale-105 transition-transform" />
-            <img src={mastercard} alt="mastercard" className="h-8 md:h-10 w-auto object-contain hover:scale-105 transition-transform" />
-            <img src={card1} alt="card 1" className="h-8 md:h-10 w-auto object-contain hover:scale-105 transition-transform" />
+            <img
+              src={qr}
+              alt="qr payment"
+              className="h-8 md:h-10 w-auto object-contain hover:scale-105 transition-transform"
+            />
+            <img
+              src={visa}
+              alt="visa payment"
+              className="h-8 md:h-10 w-auto object-contain hover:scale-105 transition-transform"
+            />
+            <img
+              src={mastercard}
+              alt="mastercard"
+              className="h-8 md:h-10 w-auto object-contain hover:scale-105 transition-transform"
+            />
+            <img
+              src={card1}
+              alt="card 1"
+              className="h-8 md:h-10 w-auto object-contain hover:scale-105 transition-transform"
+            />
           </div>
         </div>
         <div className="flex flex-col items-center md:items-end text-center md:text-right gap-3">
           <p className="text-gray-700 font-medium">We're affiliated to</p>
           <div className="flex flex-wrap justify-center md:justify-end items-center gap-4">
-            <img src={nepalGovernment} alt="nepal Government" className="h-10 w-auto object-contain hover:scale-105 transition-transform" />
-            <img src={nepalMountaineering} alt="nepal mountaineering" className="h-10 w-auto object-contain hover:scale-105 transition-transform" />
-            <img src={nepalTourism} alt="nepal tourism" className="h-10 w-auto object-contain hover:scale-105 transition-transform" />
-            <img src={rescueAssosciation} alt="rescue association" className="h-10 w-auto object-contain hover:scale-105 transition-transform" />
-            <img src={taan} alt="taan" className="h-10 w-auto object-contain hover:scale-105 transition-transform" />
-            <img src={keep} alt="keep" className="h-10 w-auto object-contain hover:scale-105 transition-transform" />
+            <img
+              src={nepalGovernment}
+              alt="nepal Government"
+              className="h-10 w-auto object-contain hover:scale-105 transition-transform"
+            />
+            <img
+              src={nepalMountaineering}
+              alt="nepal mountaineering"
+              className="h-10 w-auto object-contain hover:scale-105 transition-transform"
+            />
+            <img
+              src={nepalTourism}
+              alt="nepal tourism"
+              className="h-10 w-auto object-contain hover:scale-105 transition-transform"
+            />
+            <img
+              src={rescueAssosciation}
+              alt="rescue association"
+              className="h-10 w-auto object-contain hover:scale-105 transition-transform"
+            />
+            <img
+              src={taan}
+              alt="taan"
+              className="h-10 w-auto object-contain hover:scale-105 transition-transform"
+            />
+            <img
+              src={keep}
+              alt="keep"
+              className="h-10 w-auto object-contain hover:scale-105 transition-transform"
+            />
           </div>
         </div>
       </div>

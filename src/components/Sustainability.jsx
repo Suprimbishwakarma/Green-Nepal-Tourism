@@ -57,7 +57,7 @@ const Sustainability = () => {
         <img
           src={mark}
           alt="question mark"
-          className=" absolute text-8xl z-0 top-12 right-50 opacity-50 h-30 w-30 animate-bounce"
+          className="hidden md:block absolute z-0 top-12 right-10 lg:right-20 opacity-50 w-20 h-20 md:w-24 md:h-24 lg:w-30 lg:h-30"
         />
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col items-center gap-4 mb-12">
@@ -93,7 +93,7 @@ const Sustainability = () => {
         <img
           src={colon}
           alt="colon"
-          className=" absolute text-8xl z-0 top-20 right-50 opacity-50"
+          className="hidden md:block absolute text-8xl z-0 top-20 right-10 lg:right-20 opacity-50 w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24"
         />
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col items-center gap-4 mb-12">

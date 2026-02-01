@@ -1,7 +1,7 @@
 import everestImg from "../assets/everest.jpg";
 import annapurnaImg from "../assets/annapurna.jpg";
 import chitwanImg from "../assets/chitwan.jpg";
-import homeBg from "../assets/homebackground.png";
+import homeBg from "../assets/herobackground.jpg";
 
 const trek = [
   {

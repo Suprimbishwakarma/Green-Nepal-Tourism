@@ -1,10 +1,15 @@
+import everestImg from "../assets/everest.jpg";
+import annapurnaImg from "../assets/annapurna.jpg";
+import chitwanImg from "../assets/chitwan.jpg";
+import homeBg from "../assets/homebackground.png";
+
 const trek = [
   {
     id: 1,
     title: "Everest Base Camp Trek",
     description:
       "Journey to the foot of the world's highest peak through pristine Sherpa villages and breathtaking mountain landscapes.",
-    image: "/src/assets/everest.jpg",
+    image: everestImg,
     duration: "14 Days",
     difficulty: "Moderate",
     groupSize: "Max 12",
@@ -15,7 +20,7 @@ const trek = [
     title: "Annapurna Circuit Adventure",
     description:
       "Experience diverse landscapes from subtropical forests to alpine meadows, with stunning rhododendron blooms.",
-    image: "/src/assets/annapurna.jpg",
+    image: annapurnaImg,
     duration: "16 Days",
     difficulty: "Challenging",
     groupSize: "Max 10",
@@ -26,7 +31,7 @@ const trek = [
     title: "Chitwan Wildlife Safari",
     description:
       "Explore Nepal's lush jungle paradise, home to rare one-horned rhinos, Bengal tigers, and exotic bird species.",
-    image: "/src/assets/chitwan.jpg",
+    image: chitwanImg,
     duration: "4 Days",
     difficulty: "Easy",
     groupSize: "Max 8",
@@ -37,7 +42,7 @@ const trek = [
     title: "Manaslu circuit trek",
     description:
       "Explore Nepal's lush jungle paradise, home to rare one-horned rhinos, Bengal tigers, and exotic bird species.",
-    image: "/src/assets/homebackground.png",
+    image: homeBg,
     duration: "4 Days",
     difficulty: "Easy",
     groupSize: "Max 8",

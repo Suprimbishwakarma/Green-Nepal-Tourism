@@ -24,16 +24,16 @@ const Intro = () => {
           <label htmlFor="search" className="sr-only">
             Search destinations
           </label>
-          <div className="flex flex-col sm:flex-row rounded-md overflow-hidden shadow-lg w-full sm:w-auto">
+          <div className="flex flex-col gap-2  sm:flex-row rounded-md overflow-hidden shadow-lg w-full sm:w-auto">
             <input
               id="search"
               type="text"
               placeholder="Search destinations..."
-              className="px-4 py-3 w-full sm:w-64 md:w-80 bg-white bg-opacity-95 text-gray-800 outline-none"
+              className="px-4 py-3 w-full sm:w-64 rounded-md md:w-80 bg-white text-center lg:text-start bg-opacity-95 text-gray-800 outline-none"
             />
             <button
               type="submit"
-              className="bg-green-600 text-white px-6 py-3 hover:bg-green-700 focus:outline-none transition-colors font-bold"
+              className="bg-green-600 text-white rounded-md px-6 py-3 hover:bg-green-700 focus:outline-none transition-colors font-bold"
             >
               Search
             </button>

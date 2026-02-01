@@ -20,7 +20,7 @@ const Banner = () => {
         <div className="flex lg:gap-4 items-center">
           <div className="flex flex-col justify-end md:flex-row items-center gap-2 lg:gap-4 w-full md:w-auto ">
             <div className="flex flex-col justify-end md:items-end">
-              <p className="text-gray-700/70 text-sm lg:text-md">
+              <p className="text-gray-700/70 text-sm lg:text-lg">
                 2500 excellent reviews
               </p>
               <div className="flex items-center justify-center md:justify-end gap-1">
@@ -29,7 +29,7 @@ const Banner = () => {
               </div>
             </div>
             <div className="flex flex-col md:items-start lg:items-end">
-              <p className="hidden md:block text-gray-700/70 text-sm lg:text-md">
+              <p className="hidden md:block text-gray-700/70 text-sm lg:text-lg">
                 Talk to an expert
               </p>
               <div className="flex items-center gap-2">

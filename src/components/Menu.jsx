@@ -36,7 +36,7 @@ const Menu = () => {
             onMouseEnter={() => setHovered(menu.id)}
             onMouseLeave={() => setHovered(null)}
           >
-            <button className="w-full md:w-auto px-4 py-3 bg-transparent text-white rounded-md cursor-pointer text-base font-medium flex justify-between items-center gap-2 transition-all duration-300">
+            <button className="w-full md:w-auto px-4 py-3 bg-transparent text-black rounded-md cursor-pointer text-base font-medium flex justify-between items-center gap-2 transition-all duration-300">
               {menu.title}
               <span
                 className={`text-xs transition-transform duration-300 ${

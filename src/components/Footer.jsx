@@ -124,25 +124,25 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-around p-2">
-        <div className="flex flex-col">
-          <p className="text-gray-700">We accept</p>
-          <div className="flex items-center">
-            <img src={qr} alt="qr payment" />
-            <img src={visa} alt="visa payment" />
-            <img src={mastercard} alt="mastercard" />
-            <img src={card1} alt="card 1" />
+      <div className="flex flex-col md:flex-row justify-between items-center px-6 py-8 md:px-20 gap-8 md:gap-0 bg-gray-50">
+        <div className="flex flex-col items-center md:items-start text-center md:text-left gap-3">
+          <p className="text-gray-700 font-medium">We accept</p>
+          <div className="flex flex-wrap justify-center md:justify-start items-center gap-4">
+            <img src={qr} alt="qr payment" className="h-8 md:h-10 w-auto object-contain hover:scale-105 transition-transform" />
+            <img src={visa} alt="visa payment" className="h-8 md:h-10 w-auto object-contain hover:scale-105 transition-transform" />
+            <img src={mastercard} alt="mastercard" className="h-8 md:h-10 w-auto object-contain hover:scale-105 transition-transform" />
+            <img src={card1} alt="card 1" className="h-8 md:h-10 w-auto object-contain hover:scale-105 transition-transform" />
           </div>
         </div>
-        <div>
-          <p className="text-gray-700">We're affiliated to</p>
-          <div className="flex items-center">
-            <img src={nepalGovernment} alt="nepal Government" />
-            <img src={nepalMountaineering} alt="nepal mountaineering" />
-            <img src={nepalTourism} alt="nepal tourism" />
-            <img src={rescueAssosciation} alt="rescue association" />
-            <img src={taan} alt="taan" />
-            <img src={keep} alt="keep" />
+        <div className="flex flex-col items-center md:items-end text-center md:text-right gap-3">
+          <p className="text-gray-700 font-medium">We're affiliated to</p>
+          <div className="flex flex-wrap justify-center md:justify-end items-center gap-4">
+            <img src={nepalGovernment} alt="nepal Government" className="h-10 w-auto object-contain hover:scale-105 transition-transform" />
+            <img src={nepalMountaineering} alt="nepal mountaineering" className="h-10 w-auto object-contain hover:scale-105 transition-transform" />
+            <img src={nepalTourism} alt="nepal tourism" className="h-10 w-auto object-contain hover:scale-105 transition-transform" />
+            <img src={rescueAssosciation} alt="rescue association" className="h-10 w-auto object-contain hover:scale-105 transition-transform" />
+            <img src={taan} alt="taan" className="h-10 w-auto object-contain hover:scale-105 transition-transform" />
+            <img src={keep} alt="keep" className="h-10 w-auto object-contain hover:scale-105 transition-transform" />
           </div>
         </div>
       </div>

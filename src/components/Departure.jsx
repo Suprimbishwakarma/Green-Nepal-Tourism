@@ -1,6 +1,7 @@
 import React from "react";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import trips from "../constants/Departure";
+import { Link } from "react-router-dom";
 
 const Departure = () => {
   return (
@@ -44,8 +45,10 @@ const Departure = () => {
                 <span className="md:hidden text-xs font-bold text-gray-400 uppercase mb-1 block">
                   Trip Name
                 </span>
-                <div className="font-bold text-xl text-gray-900">
-                  {trip.destination}
+                <div className="font-bold text-xl text-gray-900 hover:text-green-600 transition-colors">
+                  <Link to={`/details/${trip.id}`}>
+                    {trip.destination}
+                  </Link>
                 </div>
               </div>
 

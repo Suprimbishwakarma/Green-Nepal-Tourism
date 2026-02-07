@@ -39,26 +39,6 @@ const trips = [
     priceNow: "US$ 950",
     priceWas: "$997.5",
   },
-  {
-    id: 5,
-    destination: "Himalayan Luxury Experience",
-    duration: "08 days",
-    date: "from 30th Jan to 6th Feb",
-    status: "Guaranteed",
-    seatsLeft: 2,
-    priceNow: "US$ 2370",
-    priceWas: "$2488.5",
-  },
-  {
-    id: 6,
-    destination: "Annapurna Family Hike and Nagarkot Tour",
-    duration: "09 days",
-    date: "from 30th Jan to 7th Feb",
-    status: "Guaranteed",
-    seatsLeft: 2,
-    priceNow: "US$ 1525",
-    priceWas: "$1601.25",
-  },
 ];
 
 export default trips;

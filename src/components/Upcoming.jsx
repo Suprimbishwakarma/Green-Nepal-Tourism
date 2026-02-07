@@ -1,7 +1,9 @@
 import React from "react";
 import { trek } from "../constants/trek";
+import { Link, useNavigate } from "react-router-dom";
 
 const Upcoming = () => {
+  const navigate = useNavigate();
   const sortedTrek = [...trek].sort((a, b) => a.id - b.id);
   return (
     <div className="bg-white">
@@ -22,7 +24,8 @@ const Upcoming = () => {
             {sortedTrek.map((item) => (
               <div
                 key={item.id}
-                className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden group border border-gray-200"
+                onClick={() => navigate(`/details/${item.id}`)}
+                className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden group border border-gray-200 cursor-pointer"
               >
                 {/* Image Container */}
                 <div className="relative overflow-hidden h-56 bg-gradient-to-br from-slate-200 to-slate-300">
@@ -36,13 +39,12 @@ const Upcoming = () => {
                   {/* Difficulty Badge */}
                   <div className="absolute top-4 right-4">
                     <span
-                      className={`px-3 py-1 rounded-lg text-white text-md ${
-                        item.difficulty === "Easy"
-                          ? "bg-green-600"
-                          : item.difficulty === "Moderate"
-                            ? "bg-yellow-600"
-                            : "bg-red-600"
-                      }`}
+                      className={`px-3 py-1 rounded-lg text-white text-md ${item.difficulty === "Easy"
+                        ? "bg-green-600"
+                        : item.difficulty === "Moderate"
+                          ? "bg-yellow-600"
+                          : "bg-red-600"
+                        }`}
                     >
                       {item.difficulty}
                     </span>
@@ -66,12 +68,6 @@ const Upcoming = () => {
                       </span>
                       <span>{item.duration}</span>
                     </div>
-                    {/* <div className="flex items-center text-black">
-                      <span className="font-semibold  text-lg text-orange-600 mr-2">
-                        ⛰️
-                      </span>
-                      <span>{item.difficulty}</span>
-                    </div> */}
                     <div className="flex items-center text-black">
                       <span className="font-semibold text-sm text-green-600 mr-2">
                         👥
@@ -80,11 +76,17 @@ const Upcoming = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-center justify-between pt-4 border-t border-gray-200">
-                    <span className="text-md font-bold text-green-600">
+                  <div className="flex items-center justify-between pt-4 border-t border-gray-200 gap-1">
+                    <span className="text-md font-bold text-green-600 whitespace-nowrap">
                       {item.price}
                     </span>
-                    <button className="bg-green-600 text-md text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors duration-200 font-semibold">
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        navigate(`/details/${item.id}#availability`);
+                      }}
+                      className="bg-green-600 text-[12px] text-white px-5 py-2.5 rounded-lg hover:bg-green-700 transition-colors duration-200 font-bold cursor-pointer whitespace-nowrap shadow-md shadow-green-600/20 active:scale-95"
+                    >
                       Book Now
                     </button>
                   </div>

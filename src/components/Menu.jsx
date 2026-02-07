@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import menus from "../constants/Menu";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-const Menu = () => {
+const Menu = ({ sticky = true }) => {
   const [hovered, setHovered] = useState(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -11,7 +11,7 @@ const Menu = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-green-600">
+    <nav className={`${sticky ? "sticky top-0" : ""} z-50 bg-green-600`}>
       {/* Mobile Menu Button */}
       <div className="md:hidden flex justify-end p-1">
         <button
@@ -26,9 +26,8 @@ const Menu = () => {
       {/* Navigation Links */}
       <div
         onDoubleClick={toggleMenu}
-        className={`${
-          isMenuOpen ? "flex" : "hidden"
-        } md:flex flex-col md:flex-row justify-center items-center gap-1 md:gap-2.5 absolute md:relative top-full left-0 w-full bg-white md:bg-transparent shadow-lg md:shadow-none z-50`}
+        className={`${isMenuOpen ? "flex" : "hidden"
+          } md:flex flex-col md:flex-row justify-center items-center gap-1 md:gap-2.5 absolute md:relative top-full left-0 w-full bg-white md:bg-transparent shadow-lg md:shadow-none z-50`}
       >
         {menus.map((menu) => (
           <div
@@ -43,9 +42,8 @@ const Menu = () => {
             >
               {menu.title}
               <span
-                className={`text-xs transition-transform duration-300 ${
-                  hovered === menu.id ? "rotate-180" : ""
-                }`}
+                className={`text-xs transition-transform duration-300 ${hovered === menu.id ? "rotate-180" : ""
+                  }`}
               >
                 ▼
               </span>
@@ -56,7 +54,7 @@ const Menu = () => {
                   e.stopPropagation();
                   setHovered(null);
                 }}
-                className="absolute md:top-full left-0 bg-green-600 rounded-md list-none py-2 m-0 shadow-xl z-[60] animate-in fade-in duration-300 whitespace-nowrap min-w-full md:min-w-[200px]"
+                className="absolute md:top-full left-0 bg-green-600 rounded-b-md list-none py-2 m-0 shadow-xl z-[60] animate-in fade-in duration-300 whitespace-nowrap min-w-full md:min-w-[200px]"
               >
                 {menu.submenu.map((item, index) => (
                   <li

@@ -15,7 +15,6 @@ import Upcoming from "../components/Upcoming";
 const Home = () => {
   return (
     <>
-      <Banner />
       <Menu />
       <Intro />
       <TrekCard />
@@ -26,7 +25,6 @@ const Home = () => {
       <Sustainability />
       <Subscription />
       <FAQ />
-      <Footer />
     </>
   );
 };

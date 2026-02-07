@@ -11,7 +11,7 @@ const trek = [
       "Journey to the foot of the world's highest peak through pristine Sherpa villages and breathtaking mountain landscapes.",
     image: everestImg,
     duration: "14 Days",
-    difficulty: "Moderate",
+    difficulty: "Strenuous",
     groupSize: "Max 12",
     price: "$1,299",
   },
@@ -39,14 +39,14 @@ const trek = [
   },
   {
     id: 4,
-    title: "Manaslu circuit trek",
+    title: "Manaslu Circuit Trek",
     description:
-      "Explore Nepal's lush jungle paradise, home to rare one-horned rhinos, Bengal tigers, and exotic bird species.",
+      "A remote and culturally rich circuit around the 'Mountain of the Spirit', offering a quieter alternative to Annapurna.",
     image: homeBg,
-    duration: "4 Days",
-    difficulty: "Easy",
-    groupSize: "Max 8",
-    price: "$599",
+    duration: "15 Days",
+    difficulty: "Strenuous",
+    groupSize: "Max 10",
+    price: "$1,350",
   },
 ];
 

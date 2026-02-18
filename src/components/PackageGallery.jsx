@@ -88,8 +88,8 @@ const PackageGallery = () => {
                     {/* Overlay */}
                     <div className="absolute inset-0 bg-black/40 flex items-center justify-center flex-col text-white group-hover:bg-black/50 transition-colors">
                         <FaImages className="text-2xl mb-1" />
-                        <span className="font-semibold text-sm">View All</span>
-                        <span className="text-xs">{trekSamples.length} Photos</span>
+                        <span className="font-semibold text-base">View All</span>
+                        <span className="text-base">{trekSamples.length} Photos</span>
                     </div>
                 </div>
             </div>
@@ -127,7 +127,7 @@ const PackageGallery = () => {
                             className="max-h-[85vh] max-w-full object-contain shadow-2xl rounded-md"
                         />
                         {/* Counter */}
-                        <div className="mt-4 text-white/80 text-sm tracking-widest font-light bg-black/40 px-4 py-1 rounded-full backdrop-blur-sm">
+                        <div className="mt-4 text-white/80 text-base tracking-widest font-light bg-black/40 px-4 py-1 rounded-full backdrop-blur-sm">
                             {currentImageIndex + 1} / {trekSamples.length}
                         </div>
                     </div>

@@ -73,7 +73,7 @@ const Booking = () => {
                     <div>
                         <button
                             onClick={() => navigate(-1)}
-                            className="flex items-center gap-2 text-gray-400 hover:text-green-600 transition-all mb-3 font-semibold group text-xs"
+                            className="flex items-center gap-2 text-gray-400 hover:text-green-600 transition-all mb-3 font-semibold group text-sm"
                         >
                             <IoMdArrowBack size={16} className="group-hover:-translate-x-1 transition-transform" /> Back to Details
                         </button>
@@ -104,7 +104,7 @@ const Booking = () => {
 
                             <div className="flex flex-col md:flex-row items-center gap-4 bg-gray-50/50 rounded-xl p-4 border border-gray-100">
                                 <div className="flex flex-col gap-1.5">
-                                    <span className="text-[11px] font-black text-gray-400 uppercase tracking-widest">Number of Pax</span>
+                                    <span className="text-sm font-black text-gray-400 uppercase tracking-widest">Number of Pax</span>
                                     <div className="flex items-center gap-4 bg-white p-1 rounded-lg border border-gray-100">
                                         <button
                                             onClick={() => handleTravelersChange(-1)}
@@ -123,10 +123,10 @@ const Booking = () => {
                                 </div>
                                 <div className="hidden md:block h-10 w-px bg-gray-200"></div>
                                 <div className="flex flex-col gap-0 text-center md:text-left">
-                                    <span className="text-[11px] font-black text-gray-400 uppercase tracking-widest">Rate</span>
+                                    <span className="text-sm font-black text-gray-400 uppercase tracking-widest">Rate</span>
                                     <div className="flex items-baseline gap-1">
                                         <span className="text-2xl font-black text-green-600 font-serif">${unitPrice}</span>
-                                        <span className="text-xs font-bold text-gray-400">/ pax</span>
+                                        <span className="text-sm font-bold text-gray-400">/ pax</span>
                                     </div>
                                 </div>
                             </div>
@@ -138,12 +138,12 @@ const Booking = () => {
                                 <span className="w-9 h-9 rounded-lg bg-green-600 text-white flex items-center justify-center text-base font-bold">2</span>
                                 <h2 className="text-2xl font-serif font-bold text-gray-900">Lead Traveller</h2>
                             </div>
-                            <p className="text-xs text-gray-400 mb-5 ml-12 font-medium">Primary contact details (18+ only).</p>
+                            <p className="text-sm text-gray-400 mb-5 ml-12 font-medium">Primary contact details (18+ only).</p>
 
                             <div className="space-y-5">
                                 <div className="grid md:grid-cols-2 gap-5">
                                     <div className="space-y-1.5">
-                                        <label className="text-[11px] font-black text-gray-500 uppercase tracking-widest ml-1">Full Name *</label>
+                                        <label className="text-sm font-black text-gray-500 uppercase tracking-widest ml-1">Full Name *</label>
                                         <input
                                             required
                                             type="text"
@@ -151,11 +151,11 @@ const Booking = () => {
                                             value={formData.fullName}
                                             onChange={handleInputChange}
                                             placeholder="Legal Name"
-                                            className="w-full bg-gray-50/50 border border-gray-100 rounded-lg px-4 py-3 focus:border-green-600 focus:bg-white transition-all outline-none font-medium placeholder:text-gray-300 text-base"
+                                            className="w-full bg-gray-50/50 border border-gray-100 rounded-lg px-4 py-3 focus:border-green-600 focus:bg-white transition-all outline-none font-medium placeholder:text-gray-300 text-sm"
                                         />
                                     </div>
                                     <div className="space-y-1.5">
-                                        <label className="text-[9px] font-black text-gray-500 uppercase tracking-widest ml-1">Email *</label>
+                                        <label className="text-sm font-black text-gray-500 uppercase tracking-widest ml-1">Email *</label>
                                         <input
                                             required
                                             type="email"
@@ -170,25 +170,25 @@ const Booking = () => {
 
                                 <div className="grid md:grid-cols-2 gap-5">
                                     <div className="space-y-1.5">
-                                        <label className="text-[9px] font-black text-gray-500 uppercase tracking-widest ml-1">Date of Birth *</label>
+                                        <label className="text-sm font-black text-gray-500 uppercase tracking-widest ml-1">Date of Birth *</label>
                                         <input
                                             required
                                             type="date"
                                             name="dob"
                                             value={formData.dob}
                                             onChange={handleInputChange}
-                                            className="w-full bg-gray-50/50 border border-gray-100 rounded-lg px-4 py-3 focus:border-green-600 focus:bg-white transition-all outline-none font-medium text-base"
+                                            className="w-full bg-gray-50/50 border border-gray-100 rounded-lg px-4 py-3 focus:border-green-600 focus:bg-white transition-all outline-none font-medium text-sm"
                                         />
                                     </div>
                                     <div className="space-y-1.5">
-                                        <label className="text-[9px] font-black text-gray-500 uppercase tracking-widest ml-1">Nationality *</label>
+                                        <label className="text-sm font-black text-gray-500 uppercase tracking-widest ml-1">Nationality *</label>
                                         <div className="relative group">
                                             <select
                                                 required
                                                 name="nationality"
                                                 value={formData.nationality}
                                                 onChange={handleInputChange}
-                                                className="w-full bg-gray-50/50 border border-gray-100 rounded-lg px-4 py-3 focus:border-green-600 focus:bg-white transition-all outline-none appearance-none font-medium text-base cursor-pointer"
+                                                className="w-full bg-gray-50/50 border border-gray-100 rounded-lg px-4 py-3 focus:border-green-600 focus:bg-white transition-all outline-none appearance-none font-medium text-sm cursor-pointer"
                                             >
                                                 <option value="">Select</option>
                                                 <option value="NP">Nepal</option>
@@ -204,14 +204,14 @@ const Booking = () => {
                                 </div>
 
                                 <div className="space-y-1.5">
-                                    <label className="text-[9px] font-black text-gray-500 uppercase tracking-widest ml-1">Mobile number *</label>
+                                    <label className="text-sm font-black text-gray-500 uppercase tracking-widest ml-1">Mobile number *</label>
                                     <div className="flex gap-3">
                                         <div className="relative group min-w-[90px]">
                                             <select
                                                 name="countryCode"
                                                 value={formData.countryCode}
                                                 onChange={handleInputChange}
-                                                className="w-full bg-gray-50/50 border border-gray-100 rounded-lg px-2 py-3 focus:border-green-600 focus:bg-white transition-all outline-none appearance-none font-medium text-base cursor-pointer"
+                                                className="w-full bg-gray-50/50 border border-gray-100 rounded-lg px-2 py-3 focus:border-green-600 focus:bg-white transition-all outline-none appearance-none font-medium text-sm cursor-pointer"
                                             >
                                                 <option value="+977">+977</option>
                                                 <option value="+1">+1</option>
@@ -229,13 +229,13 @@ const Booking = () => {
                                             value={formData.phone}
                                             onChange={handleInputChange}
                                             placeholder="98XXXXXXXX"
-                                            className="flex-1 bg-gray-50/50 border border-gray-100 rounded-lg px-4 py-3 focus:border-green-600 focus:bg-white transition-all outline-none font-medium placeholder:text-gray-300 text-base"
+                                            className="flex-1 bg-gray-50/50 border border-gray-100 rounded-lg px-4 py-3 focus:border-green-600 focus:bg-white transition-all outline-none font-medium placeholder:text-gray-300 text-sm"
                                         />
                                     </div>
                                 </div>
 
                                 <div className="space-y-1.5">
-                                    <label className="text-[9px] font-black text-gray-500 uppercase tracking-widest ml-1">Special Req.</label>
+                                    <label className="text-sm font-black text-gray-500 uppercase tracking-widest ml-1">Special Req.</label>
                                     <textarea
                                         name="specialRequirements"
                                         value={formData.specialRequirements}
@@ -313,7 +313,7 @@ const Booking = () => {
                         <div className="bg-white rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.05)] border border-gray-50 overflow-hidden ring-2 ring-white">
                             <div className="p-4 bg-gray-50/50 border-b border-gray-100 flex items-center justify-between">
                                 <h3 className="font-serif font-black text-lg text-gray-900 tracking-tight">Order Summary</h3>
-                                <div className="px-2 py-0.5 bg-green-100 rounded text-green-700 text-xs font-bold">READY</div>
+                                <div className="px-2 py-0.5 bg-green-100 rounded text-green-700 text-sm font-bold">READY</div>
                             </div>
                             <div className="p-5 space-y-5">
                                 <div className="flex gap-3 items-center">
@@ -321,7 +321,7 @@ const Booking = () => {
                                         <img src={image} alt={packageName} className="w-full h-full object-cover" />
                                     </div>
                                     <div className="space-y-0.5">
-                                        <h4 className="text-xs font-black text-gray-900 uppercase tracking-wide leading-tight line-clamp-2">{packageName}</h4>
+                                        <h4 className="text-sm font-black text-gray-900 uppercase tracking-wide leading-tight line-clamp-2">{packageName}</h4>
                                         <div className="flex flex-col gap-0 text-sm text-gray-600 font-bold">
                                             <p className="flex items-center gap-1.5"><FaCalendarAlt className="text-green-600" size={12} /> {travelDate}</p>
                                             <p className="flex items-center gap-1.5"><FaUserFriends className="text-green-600" size={12} /> {travelers} Pax</p>
@@ -329,19 +329,19 @@ const Booking = () => {
                                     </div>
                                 </div>
 
-                                <div className="space-y-3 pt-4 border-t border-dashed border-gray-200 text-xs">
+                                <div className="space-y-3 pt-4 border-t border-dashed border-gray-200 text-sm">
                                     <div className="flex justify-between items-center">
-                                        <span className="text-gray-400 uppercase text-[9px] font-bold">Subtotal</span>
+                                        <span className="text-gray-400 uppercase text-sm font-bold">Subtotal</span>
                                         <span className="text-gray-900 font-serif font-bold">${totalPrice}</span>
                                     </div>
                                     <div className="flex justify-between items-center">
-                                        <span className="text-gray-400 uppercase text-[9px] font-bold">Taxes</span>
-                                        <span className="text-green-600 font-black text-[9px] tracking-wider">FREE</span>
+                                        <span className="text-gray-400 uppercase text-sm font-bold">Taxes</span>
+                                        <span className="text-green-600 font-black text-sm tracking-wider">FREE</span>
                                     </div>
 
                                     <div className="pt-4 border-t border-gray-100 flex justify-between items-end">
                                         <div>
-                                            <p className="text-xs uppercase font-black text-gray-500 tracking-widest mb-1">Total USD</p>
+                                            <p className="text-sm uppercase font-black text-gray-500 tracking-widest mb-1">Total USD</p>
                                             <p className="text-4xl font-black text-gray-900 font-serif leading-none">
                                                 <span className="text-xl text-gray-300 font-sans mr-0.5">$</span>{totalPrice}
                                             </p>
@@ -350,10 +350,10 @@ const Booking = () => {
 
                                     <div className="p-4 bg-green-600 rounded-xl shadow-md space-y-2 mt-2 text-white">
                                         <div className="flex justify-between items-center">
-                                            <span className="text-xs font-black text-white/90 uppercase tracking-widest">Pay Now</span>
+                                            <span className="text-sm font-black text-white/90 uppercase tracking-widest">Pay Now</span>
                                             <span className="text-2xl font-black font-serif leading-none">${paymentOption === "full" ? totalPrice : depositAmount}</span>
                                         </div>
-                                        <div className="flex justify-between items-center text-xs pt-2 border-t border-white/20 opacity-90">
+                                        <div className="flex justify-between items-center text-sm pt-2 border-t border-white/20 opacity-90">
                                             <span className="font-medium italic">Balance</span>
                                             <span className="font-black">${paymentOption === "full" ? "0" : (totalPrice - depositAmount).toFixed(2)}</span>
                                         </div>
@@ -361,7 +361,7 @@ const Booking = () => {
                                 </div>
 
                                 <div className="space-y-3 pt-2">
-                                    <div className="flex items-center gap-2 text-xs font-black text-gray-500 uppercase tracking-widest justify-center">
+                                    <div className="flex items-center gap-2 text-sm font-black text-gray-500 uppercase tracking-widest justify-center">
                                         <FaShieldAlt size={12} /> Secure Checkout
                                     </div>
                                     <div className="flex justify-center items-center gap-6 grayscale opacity-40">
@@ -371,7 +371,7 @@ const Booking = () => {
                                 </div>
                             </div>
                         </div>
-                        <p className="px-4 text-xs text-gray-500 text-center font-serif italic leading-relaxed">
+                        <p className="px-4 text-sm text-gray-500 text-center font-serif italic leading-relaxed">
                             "Safe & Secure military-grade encryption for all payments."
                         </p>
                     </div>

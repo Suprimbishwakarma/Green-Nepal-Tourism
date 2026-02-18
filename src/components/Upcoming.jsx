@@ -39,12 +39,13 @@ const Upcoming = () => {
                   {/* Difficulty Badge */}
                   <div className="absolute top-4 right-4">
                     <span
-                      className={`px-3 py-1 rounded-lg text-white text-md ${item.difficulty === "Easy"
-                        ? "bg-green-600"
-                        : item.difficulty === "Moderate"
-                          ? "bg-yellow-600"
-                          : "bg-red-600"
-                        }`}
+                      className={`px-3 py-1 rounded-lg text-white text-md ${
+                        item.difficulty === "Easy"
+                          ? "bg-green-600"
+                          : item.difficulty === "Moderate"
+                            ? "bg-yellow-600"
+                            : "bg-red-600"
+                      }`}
                     >
                       {item.difficulty}
                     </span>
@@ -56,7 +57,7 @@ const Upcoming = () => {
                   <h3 className="text-lg font-bold text-gray-900 mb-2 line-clamp-2">
                     {item.title}
                   </h3>
-                  <p className="text-gray-700 text-sm mb-4 line-clamp-3">
+                  <p className="text-gray-700 text-md mb-4 line-clamp-3">
                     {item.description}
                   </p>
 

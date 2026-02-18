@@ -117,7 +117,7 @@ const Footer = () => {
       </div>
 
       <div className="bg-white border-t border-gray-100">
-        <div className="max-w-7xl mx-auto px-6 md:px-20 py-10">
+        <div className="max-w-7xl mx-auto px-6 md:px-20 py-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
             {/* Social Links */}
             <div className="flex flex-col items-center md:items-start gap-4">
@@ -192,7 +192,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="w-full text-center bg-green-800 text-white/50 text-sm py-6 border-t border-white/5">
+      <div className="w-full text-center bg-green-700 text-white/50 text-md py-6 border-t border-white/5">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p>© 2026 Green Nepal Tourism. All rights reserved.</p>
           <div className="flex gap-6">
